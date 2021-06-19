@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <cs50.h>
+#include <math.h>
+int main()
+{
+    float word = 1;
+    float Letter = 0;
+    float phrase = 0;
+    float L = (Letter * 100)/word
+    float s = (phrase * 100)/word
+    float grade = round(((L * 0.0588)-(s * 0.296))-15.8);
+    string text = get_string("Text");
+    int n = sterlen(Text);
+    for (int i = 0; i < n; i++)
+    {
+        if (isalpha(Text[i]))
+        {
+            Letter++;
+        }
+        if (Text[i] = ' ' || Text[i++])
+        {
+            word++;
+        }
+        if (Text[i] = '.' || Text[i] = '!' || Text[i] = '?')
+        {
+            pharse++;
+        }
+    }
+   if (grade < 1)
+   {
+       printf("Before Grade 1");
+   }else if (grade > 16)
+   {
+       printf("Grade 16+");
+   }else{
+       printf("Grade %f";grade);
+   }
+}
